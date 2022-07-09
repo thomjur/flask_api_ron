@@ -1,0 +1,9 @@
+version: '3'
+services:
+  flask_api_ron:
+    image: flask_api_ron_v1
+    ports:
+      - "5443:443"
+    restart: unless-stopped
+    volumes:
+      - /home/thomas/ron_predictions:/app/app/prediction_archive
