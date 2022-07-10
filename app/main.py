@@ -1,11 +1,13 @@
 from flask import Flask, jsonify, request
 from predictions import Predictor
 import ssl
+from flask_cors import CORS
 
 ctx = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
 ctx.load_cert_chain('app/certs/fullchain.pem','app/certs/privkey.pem')
 
 app=Flask(__name__)
+CORS(app)
 
 #we are importing our function from the colors.py file
 
