@@ -28,13 +28,13 @@ def index():
         # RELIGIONS
         religions = request.args.get('religions')
         if religions:
-            religions = religions.split('+')
+            religions = religions.split('-')
             religions = [religion for religion in religions if religion != ""]
         prediction['religions'] = religions
         # SOCIAL FIELDS
         social_fields = request.args.get('social_fields')
         if social_fields:
-            social_fields = social_fields.split('+')
+            social_fields = social_fields.split('-')
             social_fields = [field for field in social_fields if field != ""]
         prediction['social_fields'] = social_fields
         # SENTIMENT
