@@ -1,7 +1,7 @@
 version: '3'
 services:
   flask_api_ron:
-    image: flask_api_rel_v1
+    image: flask_api_rel_v2
     ports:
       - "5443:443"
     restart: unless-stopped
