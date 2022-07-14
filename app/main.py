@@ -51,32 +51,6 @@ class Text(db.Model):
 
 @app.route("/",methods=['GET','POST'])
 def index():
-<<<<<<< HEAD
-    '''
-    basic GET API to store annotation + tweet text passed via URL
-    '''
-    if request.method=='GET':
-        # TEXT
-        text = request.args.get('text')
-        # RON user selection + DL prediction
-        ron_selection = request.args.get('ronSelection')
-        prediction = predictor.predict(text)
-        prediction['user_prediction'] = ron_selection
-        # RELIGIONS
-        religions = request.args.get('religions')
-        if religions:
-            religions = religions.split('-')
-            religions = [religion for religion in religions if religion != ""]
-        prediction['religions'] = religions
-        # SOCIAL FIELDS
-        social_fields = request.args.get('social_fields')
-        if social_fields:
-            social_fields = social_fields.split('-')
-            social_fields = [field for field in social_fields if field != ""]
-        prediction['social_fields'] = social_fields
-        # SENTIMENT
-        prediction['sentiment'] = request.args.get('sentiment')
-=======
 	'''
 	basic GET API to store annotation + tweet text passed via URL
 	'''
