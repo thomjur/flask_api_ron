@@ -1,0 +1,43 @@
+{
+  "religions": null, 
+  "ron_prediction": "4", 
+  "sentiment": null, 
+  "social_fields": null, 
+  "text": "?social_fields=politics economy ", 
+  "user_prediction": null
+}
+{
+  "religions": null, 
+  "ron_prediction": "5", 
+  "sentiment": null, 
+  "social_fields": [
+    "politics economy "
+  ], 
+  "text": "", 
+  "user_prediction": null
+}
+{
+  "religions": null, 
+  "ron_prediction": "5", 
+  "sentiment": null, 
+  "social_fields": [
+    "politics", 
+    "economy"
+  ], 
+  "text": "", 
+  "user_prediction": null
+}
+{
+  "religions": [
+    "buddhism", 
+    "judaism"
+  ], 
+  "ron_prediction": "5", 
+  "sentiment": null, 
+  "social_fields": [
+    "politics", 
+    "economy"
+  ], 
+  "text": "", 
+  "user_prediction": null
+}

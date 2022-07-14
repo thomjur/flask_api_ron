@@ -2,3 +2,4 @@ env/
 app/__pycache__
 app/classifier/
 app/certs/
+app/prediction_archive/*.db
